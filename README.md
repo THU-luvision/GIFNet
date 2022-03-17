@@ -78,6 +78,7 @@ cd GIFNet
 Download the dataset from [this link](https://drive.google.com/file/d/1LXzA3EeJLqK2veqZ_bVgw7C6BrJYhB9E/view?usp=sharing) and place the zip file into `dataset` folder, then unzip the folder as follows. 
 
 ```shell
+mkdir dataset
 cd dataset
 unzip GIF_Dataset
 cd ..
