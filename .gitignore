@@ -1,0 +1,10 @@
+.idea/*
+.vscode/*
+.ipynb_checkpoints__pycache__
+*.pyc
+*.log
+*.tar
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
