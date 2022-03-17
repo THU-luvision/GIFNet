@@ -26,7 +26,7 @@ PANDA consists of 21 real outdoor scenes with a diversity of scenarios, pedestri
 
 The dataset contains the sequences of location and visual orientation of pedestrians in world coordinates, as well as group and interaction state information. In the pre-processing of the PANDA dataset, we compute a homography matrix to map images from the origin view to the top view for each scene, and we apply homography transformation to transpose the coordinates of locations in pixels to world coordinates in metres.
 
-The dataset can be download from [here](https://drive.google.com/file/d/1LXzA3EeJLqK2veqZ_bVgw7C6BrJYhB9E/view?usp=sharing). Please refer to the [How to run](#How to run) for the usage.
+The dataset can be download from [here](https://drive.google.com/file/d/1LXzA3EeJLqK2veqZ_bVgw7C6BrJYhB9E/view?usp=sharing). Please refer to the [How to run](https://github.com/THU-luvision/GIFNet#how-to-run) for the usage.
 
 ### The dataset file structure
 
