@@ -443,9 +443,12 @@ class GATEncoderWithAttention(nn.Module):
                 neib_hidden_attn = torch.cat((neib_hidden_attn, neib_face_rel_hidden), dim=-1)  # [9, N, 64]
                 neib_hidden_feat = torch.cat((neib_hidden_feat, neib_face_abs_hidden), dim=-1)  # [9, N, 64]
 
-            attn_feat, attn = self.gat_net(neib_hidden_attn, return_attn=True)  # [9, 1, N, N]
-
-            single_embedding = torch.matmul(attn, neib_hidden_feat.unsqueeze(1)).squeeze()
+            valid_N = neib_hidden_attn.shape[1]
+            if (valid_N > 1):
+                attn_feat, attn = self.gat_net(neib_hidden_attn, return_attn=True)  # [9, 1, N, N]
+                single_embedding = torch.matmul(attn, neib_hidden_feat.unsqueeze(1)).squeeze()
+            else:
+                single_embedding = neib_hidden_feat
 
             if len(single_embedding.shape) == 3:
                 single_embedding = single_embedding[:, 0, :]
