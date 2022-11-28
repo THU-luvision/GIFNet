@@ -1,6 +1,6 @@
 # Code and dataset of *Group interaction field for learning and explaining pedestrian anticipation*
 
-If you find it difficult to deploy/use/reproduce/modify, feel free to start an issue or [contact me](mailto:wangxuey19@mails.tsinghua.edu.cn).
+If you find it difficult to deploy/use/reproduce/modify, feel free to start an issue or [contact me](mailto:wang-xy22@mails.tsinghua.edu.cn).
 
 If you want to reproduce the result in paper or use this code for other purpose, please follow the instructions below.
 
@@ -13,7 +13,7 @@ If you want to reproduce the result in paper or use this code for other purpose,
 3. install other dependencies.
 
 ```shell
-pip install tensorboardx matplotlib seaborn scikit-learn
+pip install tensorboard tensorboardx matplotlib seaborn scikit-learn
 ```
 
 
